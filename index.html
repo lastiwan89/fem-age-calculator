@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <form class="form">
+        <div class="form-control">
+          <div class="input"><label for="day">day</label>
+              <input
+                type="text"
+                name="days"
+                id="day"
+                pattern="/\d\d/"
+                placeholder="DD"
+              /></div>
+          <div class="input"><label for="month">month</label>
+              <input
+                type="text"
+                name="month"
+                id="month"
+                pattern="/\d\d/"
+                placeholder="MM"
+              /></div>
+          <div class="input"><label for="year">year</label>
+              <input
+                type="text"
+                name="year"
+                id="year"
+                pattern="/\d\d\d\d/"
+                placeholder="YYYY"
+              />
+            </div></div>
+        </div>
+
+        <div class="submit-area">
+          <div class="divider"></div>
+          <button type="submit">
+            <img src="./assets/images/icon-arrow.svg" alt="arrow icon" />
+          </button>
+        </div>
+      </form>
+
+      <div class="container">
+        <h1 id="years-age"><span>--</span> years</h1>
+        <h1 id="months-age"><span>--</span> months</h1>
+        <h1 id="days-age"><span>--</span> days</h1>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
